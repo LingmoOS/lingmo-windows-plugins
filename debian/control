@@ -1,0 +1,33 @@
+Source: lingmo-windows-plugins
+Section: devel
+Priority: optional
+Maintainer: LingmoOS <lingmo@lingmo.org>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               extra-cmake-modules,
+               kwin-dev,
+               libxcb-util-dev,
+               libxcb-util0-dev,
+               libkf5windowsystem-dev,
+               libkf5globalaccel-dev,
+               libkf5config-dev,
+               libkdecorations2-dev,
+               libkf5coreaddons-dev,
+               libqt5opengl5-dev,
+               libqt5x11extras5-dev,
+               g++,
+               libkf5configwidgets-dev,
+Standards-Version: 4.5.0
+Homepage: https://lingmo.org
+
+Package: lingmo-windows-plugins
+Architecture: any
+Depends: qml-module-qtquick-controls2,
+         qml-module-qtquick2,
+         g++,
+         cmake,
+         extra-cmake-modules,
+         libkf5configwidgets-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: LingmoOS Windows Plugins
